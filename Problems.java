@@ -63,6 +63,11 @@ public class Problems {
     //     }
     //     return a * b;
     // }
+
+    /*
+        int[] arr7 = {1,2,3,4,5};          ^
+        int[] arr8 = {1,2,4,5};
+     */
     public int findMissing1(int[] arr1, int[] arr2) {
         int sum1 = -1;
         int sum2 = -1;
@@ -73,12 +78,7 @@ public class Problems {
         }
         return sum1-sum2;
     }
-    public int findMissing2(int[] arr1, int[] arr2) {
-        // int sum1 = -1;
-        int sum = 0;
-        for (int i = 0; i < arr2.length; i++) {
-            sum ^= arr2[i];
-        }
-        return sum;
-    }
+
+
+
 }
